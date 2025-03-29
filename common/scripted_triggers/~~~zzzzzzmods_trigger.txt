@@ -31,7 +31,13 @@ has_upgraded_capital_4 = {
 				toggle = @has_ancient_caches
 			}
 			# ACOT SBTG
-			has_sbtg_upgraded_capital = yes
+			inline_script = {
+				script = merger_of_rules/toggled_code
+				code = "
+						has_sbtg_upgraded_capital = yes
+				"
+				toggle = @has_sbtg_mod
+			}
 			# AOT
 			inline_script = {
 				script = merger_of_rules/toggled_code
@@ -104,7 +110,13 @@ has_upgraded_capital_4 = {
 				toggle = @has_ancient_caches
 			}
 			# ACOT SBTG
-			has_sbtg_upgraded_capital = yes
+			inline_script = {
+				script = merger_of_rules/toggled_code
+				code = "
+						has_sbtg_upgraded_capital = yes
+				"
+				toggle = @has_sbtg_mod
+			}
 			# AOT
 			inline_script = {
 				script = merger_of_rules/toggled_code
@@ -179,7 +191,13 @@ has_upgraded_capital_4 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# AOT
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -270,7 +288,13 @@ has_upgraded_capital_4 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# All That Is GRIMDARK
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -342,7 +366,13 @@ has_upgraded_capital_4 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# AOT
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -406,7 +436,13 @@ has_upgraded_capital_4 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# All That Is GRIMDARK
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -525,7 +561,13 @@ has_upgraded_capital_5 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# All That Is GRIMDARK
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -597,7 +639,13 @@ has_upgraded_capital_5 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# AOT
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -660,7 +708,13 @@ has_upgraded_capital_5 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# All That Is GRIMDARK
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -778,7 +832,13 @@ has_upgraded_capital_6 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# All That Is GRIMDARK
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -849,7 +909,13 @@ has_upgraded_capital_6 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# AOT
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -911,7 +977,13 @@ has_upgraded_capital_6 = {
 					toggle = @has_ancient_caches
 				}
 				# ACOT SBTG
-				has_sbtg_upgraded_capital = yes
+				inline_script = {
+					script = merger_of_rules/toggled_code
+					code = "
+						has_sbtg_upgraded_capital = yes
+					"
+					toggle = @has_sbtg_mod
+				}
 				# All That Is GRIMDARK
 				inline_script = {
 					script = merger_of_rules/toggled_code
@@ -1368,7 +1440,20 @@ is_huge_can_colony_planet = {
 
 ############################### City World Flavour ###############################
 ef_is_ecu = {
-	merg_is_arcology_non_gestalt = yes
+	OR = {
+		merg_is_arcology_non_gestalt = yes
+		# Sparble's Stellar Hyperconstructs
+		inline_script = {
+			script = merger_of_rules/toggled_code
+			code = "
+				is_planet_class = pc_shellworld_core_city
+				is_planet_class = pc_edersphere
+				is_planet_class = pc_black_hole_shellworld
+				is_planet_class = pc_habitable_dyson
+			"
+			toggle = @has_stellar_hyperconstructs
+		}
+	}
 }
 
 ############################### Darkspace ###############################
