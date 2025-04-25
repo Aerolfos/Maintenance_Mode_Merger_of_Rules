@@ -1,14 +1,14 @@
 ﻿l_spanish:
 
  # Policy
- policy_merger_fake_policy: ""
- policy_merger_fake_policy_desc: ""
+ policy_merger_fake_policy:0 ""
+ policy_merger_fake_policy_desc:0 ""
 
  # Starbase & Ship
- placeholder_ship: ""
- placeholder_ship_plural: ""
- starbase_placeholder: ""
- starbase_placeholder_plural: ""
+ placeholder_ship:0 ""
+ placeholder_ship_plural:0 ""
+ starbase_placeholder:0 ""
+ starbase_placeholder_plural:0 ""
 
  # Tooltips and messages
- merg_forbidden_target: "£trigger_no£ §RThis can't be targeted by a colossus§!"
+ merg_forbidden_target:0 "£trigger_no£ §RThis can't be targeted by a colossus§!"
