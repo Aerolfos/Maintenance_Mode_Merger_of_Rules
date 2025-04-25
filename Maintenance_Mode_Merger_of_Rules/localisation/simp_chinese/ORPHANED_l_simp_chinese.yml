@@ -1,0 +1,9 @@
+l_simp_chinese:
+  # These entries were in the previous [simp_chinese] loc files but are not present in the current [english] files.
+  policy_merger_fake_policy:0 ""
+  policy_merger_fake_policy_desc:0 ""
+  placeholder_ship:0 ""
+  placeholder_ship_plural:0 ""
+  starbase_placeholder:0 ""
+  starbase_placeholder_plural:0 ""
+  merg_forbidden_target:0 "£trigger_no£ §R这不能成为巨像的目标。§!"

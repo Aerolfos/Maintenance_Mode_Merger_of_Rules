@@ -2,6 +2,11 @@
 
 ---
 ## Merger of Rules `WIP`:
+- Newest changes
+---
+
+---
+## [Merger of Rules `v4.0.1`](https://github.com/Aerolfos/Maintenance_Mode_Merger_of_Rules/releases/tag/v4.0.1):
 - Fork mod after it got discontinued
 - Set up new repo with supporting github stuff
 - Write README based on workshop description
