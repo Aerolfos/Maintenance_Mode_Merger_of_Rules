@@ -1,0 +1,46 @@
+# This workflow calls a reusable main workflow that handles actual deployment
+
+# in case upload fails, re-run just that part
+name: 'Standalone upload Stellaris mod update to Steam Workshop'
+run-name: "${{ github.actor }} triggered standalone Steam Workshop upload for ${{ github.event.repository.name }}"
+
+on:
+  # for calling manually and getting input popups
+  workflow_dispatch:
+    inputs:
+      versionStellaris:
+        description: 'Stellaris version to support'
+        required: true
+        type: string
+      useChangelog:
+        description: |
+          Fill in changelog for release?
+
+          Expects a CHANGELOG.md file in target repo
+        required: true
+        type: boolean
+        default: true
+      experimentalSteamWorkshopUpload:
+        description: 'Automatically upload to Steam Workshop?'
+        required: false
+        type: boolean
+        default: true
+      
+permissions:
+  contents: write
+
+jobs:
+  use_uploadSteamWorkshop_workflow:
+    if: ${{ inputs.experimentalSteamWorkshopUpload }}
+    uses: aerolfos/stellaris_mod_deploy_action/.github/workflows/uploadSteamWorkshop.yml@main
+    with: 
+      steam_appID: "281990" # stellaris
+      # this needs to be changed if you're uploading for another paradox game
+      # a non-paradox game mod will just break everything, don't do that
+      versionStellaris: ${{ inputs.versionStellaris }}
+      useChangelog: ${{ inputs.useChangelog }}
+
+    secrets:
+      STEAM_DEPLOYMENT_USERNAME: ${{ secrets.STEAM_DEPLOYMENT_USERNAME }}
+      STEAM_CONFIG_VDF: ${{ secrets.STEAM_CONFIG_VDF }}
+
