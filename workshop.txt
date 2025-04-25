@@ -1,0 +1,10 @@
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png[/img] Supports Stellaris version: [b]0.0.0[/b][/h3]
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png[/img] Achievement compatible?[/h3]
+
+
+[img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_description_1.png[/img]
+Placeholder.
+
+[h3]Links[/h3]
+[url=https://github.com/Aerolfos/TEMPLATE/releases/latest][img]https://img.shields.io/github/v/release/aerolfos/TEMPLATE?logo=github&style=flat)[/img][/url] - Download from GitHub
+[url=https://github.com/Aerolfos/TEMPLATE][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_github_2.png[/img][/url]
