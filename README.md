@@ -56,7 +56,7 @@ These patches are mandatory for support of their related mod.
 ## Installation
 Steam owners should subscribe to the [Steam Workshop version of the mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2807759164).
 
-[Manual download](https://github.com/Aerolfos/Maintenance_Mode_Merger_of_Rules/releases/latest).
+[Manual download.](https://github.com/Aerolfos/Maintenance_Mode_Merger_of_Rules/releases/latest) [![GitHub Release Badge](https://img.shields.io/github/v/release/aerolfos/Maintenance_Mode_Merger_of_Rules?logo=github&style=flat)](https://github.com/Aerolfos/Maintenance_Mode_Merger_of_Rules/releases/latest)
 
 [Manual installation instructions](https://github.com/Aerolfos/stellaris_mod_deploy_action/wiki/Mod-Installation).
 
